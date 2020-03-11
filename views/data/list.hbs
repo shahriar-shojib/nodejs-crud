@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Buyer</th>
+            <th>Amount</th>
+            <th>ReceiptID</th>
+            <th>E-Mail</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Note</th>
+            <th>Items</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.buyer}}</td>
+            <td>{{this.amount}}</td>
+            <td>{{this.receiptID}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.note}}</td>
+            <td><ol>{{#each this.items}}<li>{{this}}</li>{{/each}}</ol></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

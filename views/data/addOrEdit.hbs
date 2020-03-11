@@ -1,0 +1,88 @@
+<h3>{{viewTitle}}</h3><br>
+
+    <form id ="validate" class="needs-validation" action="" autocomplete="off" method="POST">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Buyer:</label>
+                        <input type="text" id="buyer" name="buyer" class="form-control" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Amount:</label>
+                        <input type="number" id="amount" name="amount" class="form-control" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-groups">
+                    <label>Receipt ID:</label>
+                    <input type="text" id="receiptID" name="receiptID" class="form-control" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-groups">
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-groups">
+                    <label>Phone:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">+880</span>
+                        </div>
+                        <input type="number" id="phone" name="phone" class="form-control" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+
+                <div class="form-groups">
+                    <label>City:</label>
+                    <input type="text" name="city" id="city" class="form-control" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-groups">
+                    <label>Note:</label>
+                    <textarea class="form-control" id="note" name="note" rows="3" required></textarea>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="addwrap">
+                    <div class="form-group">
+                        <label for="items">Items</label>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input id="items" type="text" name="items" class="form-control" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-primary" id="addbtn" onclick="addBtn()">Add more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-3">
+                <input type="submit" class="btn btn-outline-primary" value="Submit">
+            </div>
+        </div>
+        <script src="/script.js"></script>
+        
+    </form>
